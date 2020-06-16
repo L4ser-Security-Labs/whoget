@@ -21,14 +21,23 @@ WhoGet is an OSINT tool that helps you gather information about nigerian phone n
 With WhoGet you can get information about the mobile number such as the 
 Carrier, Geocode, Timezone. You can also find more information by searching through
 the internet on supported search engines and also on supported social media plataforms.
-With Whoget, you can easily get leads from a phone number to email, websites, images, videos, etc.
+With WhoGet, you can easily get leads from a phone number to email, websites, images, videos, etc.
+
+## Phone Number Information
+
+Future versions will support listed search engines
+
+* [✓] Carrier
+* [✓] GeoCode
+* [✓] Timezone
+* [x] Contact name
 
 ## Supported Search Engines
 
 Future versions will support listed search engines
 
 * [✓] Google
-* [x] DuckDuckGo
+* [✓] DuckDuckGo
 * [x] Yahoo
 * [x] Bing
 
