@@ -30,7 +30,7 @@ Future versions will support listed search engines
 * [x] Carrier
 * [x] GeoCode
 * [x] Timezone
-* Contact name
+* [ ] Contact name
 
 ## Supported Search Engines
 
@@ -38,8 +38,8 @@ Future versions will support listed search engines
 
 * [x] Google
 * [x] DuckDuckGo
-* Yahoo
-* Bing
+* [ ] Yahoo
+* [ ] Bing
 
 ## Supported Social Media Platforms
 
