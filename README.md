@@ -36,10 +36,10 @@ Future versions will support listed search engines
 
 Future versions will support listed search engines
 
-* [✓] Google
-* [✓] DuckDuckGo
-* [x] Yahoo
-* [x] Bing
+* [x] Google
+* [x] DuckDuckGo
+* [] Yahoo
+* [] Bing
 
 ## Supported Social Media Platforms
 
@@ -89,5 +89,8 @@ optional arguments:
 
   # Search Google for phone number information
   python3 whoget.py -p +2348123456789 -s google
+
+  # Search DuckDuckGo for phone number information
+  python3 whoget.py -p +2348123456789 -s duckduckgo
 
 ```
