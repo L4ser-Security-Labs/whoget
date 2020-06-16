@@ -1,2 +1,4 @@
-phonenumbers
 requests
+urllib
+phonenumbers
+bs4
