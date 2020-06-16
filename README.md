@@ -27,10 +27,10 @@ With WhoGet, you can easily get leads from a phone number to email, websites, im
 
 Future versions will support listed search engines
 
-* [✓] Carrier
-* [✓] GeoCode
-* [✓] Timezone
-* [x] Contact name
+* [x] Carrier
+* [x] GeoCode
+* [x] Timezone
+* Contact name
 
 ## Supported Search Engines
 
@@ -38,17 +38,17 @@ Future versions will support listed search engines
 
 * [x] Google
 * [x] DuckDuckGo
-* [] Yahoo
-* [] Bing
+* Yahoo
+* Bing
 
 ## Supported Social Media Platforms
 
 Future versions will support listed social media platforms
 
-* [x] Twitter
-* [x] Facebook
-* [x] LinkedIn
-* [x] Instagram
+* Twitter
+* Facebook
+* LinkedIn
+* Instagram
 
 ## Requirements
 
