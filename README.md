@@ -61,7 +61,7 @@ Future versions will support listed social media platforms
 ## Install on Linux, Mac OS, Windows
 
 ```bash
-  git clone https://github.com/fnk0c/cangibrina.git
+  git clone https://github.com/L4ser-Security-Labs/whoget.git
   cd whoget
   pip3 install -r requirements.txt
 ```
