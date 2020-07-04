@@ -86,9 +86,21 @@ optional arguments:
   python3 whoget.py -p +2348123456789
 
   # Search Google for phone number information
-  python3 whoget.py -p +2348123456789 -s google
+  python3 whoget.py -p +2348123456789 -g google
 
   # Search DuckDuckGo for phone number information
-  python3 whoget.py -p +2348123456789 -s duckduckgo
+  python3 whoget.py -p +2348123456789 -g duckduckgo
+  
+  # Find leads on Twitter
+  python3 whoget.py -p +2348123456789 -s twitter
+  
+  # Find leads from Facebook
+  python3 whoget.py -p +2348123456789 -s facebook
+  
+  # Anonymize Twitter lookup
+  python3 whoget.py -p +2348123456789 -s twitter -t
+
+  # Anonymize DuckDuckGo lookup
+  python3 whoget.py -p +2348123456789 -g duckduckgo -t
 
 ```
