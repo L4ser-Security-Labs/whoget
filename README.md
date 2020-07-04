@@ -48,14 +48,6 @@ Future versions will support listed social media platforms
 * Twitter
 * Facebook
 
-## Requirements
-
-* Python 3
-* beautifulsoup4  
-* requests
-* urllib
-* phonenumbers
-
 ## Install on Linux, Mac OS, Windows
 
 ```bash
