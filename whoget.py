@@ -43,7 +43,7 @@ parser.add_argument("-g", help = "Search information using search engines.",
                     type = str, choices=['google', 'duckduckgo'])
 
 parser.add_argument("-s", help = "Find information on social media", 
-                    type = str, choices=['twitter', 'instagram', 'facebook'])
+                    type = str, choices=['twitter', 'facebook'])
 
 parser.add_argument("-t", help = "Use tor for anonymity",  action = "store_true")
 
