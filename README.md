@@ -47,8 +47,6 @@ Future versions will support listed social media platforms
 
 * Twitter
 * Facebook
-* LinkedIn
-* Instagram
 
 ## Requirements
 
@@ -78,7 +76,7 @@ optional arguments:
   -h, --help                        Shows this message and exits
   -p P                              Phone number starting with +234
   -g {google,duckduckgo}            Search information using search engines.
-  -s {twitter,instagram,facebook}   Find information on social media
+  -s {twitter,facebook}   Find information on social media
 ```
 
 ## Examples
