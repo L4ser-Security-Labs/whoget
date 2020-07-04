@@ -26,6 +26,8 @@ import phonenumbers
 path.append("src")
 import phone 
 import search
+import social
+import anonmitor
 
 
 parser = argparse.ArgumentParser(description = "OSINT tool for Nigerian phone numbers",\
@@ -43,8 +45,17 @@ parser.add_argument("-g", help = "Search information using search engines.",
 parser.add_argument("-s", help = "Find information on social media", 
                     type = str, choices=['twitter', 'instagram', 'facebook'])
 
+parser.add_argument("-t", help = "Use tor for anonymity",  action = "store_true")
+
 args = parser.parse_args()
 
+def check_tor():
+    if args.t:
+        if anonmitor != False:
+            anonmitor.tor().connect()
+            return True
+        else:
+            pass
 
 if __name__ == "__main__":
 	import banner
@@ -57,7 +68,6 @@ if __name__ == "__main__":
 			parser.print_help()
 			exit()
 		else:
-			# if args.p == None:
 			if args.p == None:
 				parser.print_help()
 				print("\nWhoGet: error: argument -p is required\n")
@@ -75,6 +85,12 @@ if __name__ == "__main__":
 		ngnumber = args.p
 
 	if args.p:
+		check_tor()
+		# if args.t:
+		# 	if anonmitor != False:
+		# 		anonmitor.tor().connect()
+		# 	else:
+		# 		pass
 		allinfo = phone.allinfo(ngnumber)
 		print ("-" * 30)
 		print ("[!] Phone number information")
@@ -82,7 +98,31 @@ if __name__ == "__main__":
 		for key, val in allinfo.items():
 			print ("[✓]", key.title(), "=>", val) 
 		if args.g == 'google':
-			results = search.google(ngnumber)
+			results = search.Google(ngnumber)
 			for dic in results:
 				print ("[✓]", dic['title'].title(), "=>", dic['link']) 
+			exit()
+		if args.g == 'duckduckgo':
+			results = search.DuckDuckGo(ngnumber)
+			exit()
+		if args.s == 'twitter':
+			results = social.twitter(ngnumber)
+			if len(results) != 0:
+				print("{} Tweets found! ".format(len(results)))
+				for tweet in results: 
+					print ("[✓] Tweeted on", tweet[0], "=>", "https://twitter.com/i/web/status/{}".format(tweet[1])) 	
+			elif len(results) == 0: 
+				print("No tweet found")
+			exit()
+		if args.s == 'facebook':
+			results = social.fbook(ngnumber)
+			if len(results) != 0:
+				print("{} Facebook Page found! ".format(len(results)))
+				for page in results: 
+					print ("[✓] Name", "=>", page["name"], 
+							"\n\t[.] Street: => {}, {}, {}".format(page['location']['street'], page['location']['city'], page['location']['country']), 
+							"\n\t[.] Map: => https://maps.google.com/?q={},{}".format(page['location']['latitude'],page['location']['longitude']),
+							"\n\t[.] Link: => {}".format(page['link']))
+			elif len(results) == 0: 
+				print("No result found")
 			exit()

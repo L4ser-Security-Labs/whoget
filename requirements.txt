@@ -1,4 +1,8 @@
+urllib2
 requests
-urllib
+beautifulsoup4
 phonenumbers
-bs4
+tweepy
+python-decouple
+facebook-sdk
+mechanize
