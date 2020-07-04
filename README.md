@@ -60,15 +60,18 @@ Future versions will support listed social media platforms
 
 ```txt
 usage: whoget.py [-h] [-p P] [-g {google,duckduckgo}]
-                 [-s {twitter,instagram,facebook}]
+                 [-s {twitter,instagram,facebook}] [-t]
 
 OSINT tool for Nigerian phone numbers
 
 optional arguments:
-  -h, --help                        Shows this message and exits
-  -p P                              Phone number starting with +234
-  -g {google,duckduckgo}            Search information using search engines.
-  -s {twitter,facebook}   Find information on social media
+  -h, --help            Shows this message and exits
+  -p P                  Phone number starting with +234
+  -g {google,duckduckgo}
+                        Search information using search engines.
+  -s {twitter,facebook}
+                        Find information on social media
+  -t                    Use Tor for anonymity
 ```
 
 ## Examples
