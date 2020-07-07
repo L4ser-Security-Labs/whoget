@@ -60,7 +60,11 @@ Future versions will support listed social media platforms
 
 Obtain your TWITTER and FACEBOOK API keys and add to WhoGet
 
-```bash .env
+```sh 
+  vi .env
+````
+
+```bash 
   # Twitter Tokens
   TWITTER_API_KEY=sLevh5v9xXXXXXXXXX
   TWITTER_API_SECRET_KEY=GK8nELv9xGwXXXXXXXXXXXXXXXXXXXXXXXXXX
